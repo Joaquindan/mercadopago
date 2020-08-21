@@ -1,6 +1,5 @@
 <?php
 echo "El pago ha sido Aprobado"
-
 echo $_GET['collection_id'];
 echo $_GET['collection_status'];
 echo $_GET['external_reference'];
