@@ -18,7 +18,8 @@
             $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
             break;
     }
-echo "Hola Mundo"
+    
+echo "Hola Mundo";
 echo $payment;
 echo $plan;
 ?>
