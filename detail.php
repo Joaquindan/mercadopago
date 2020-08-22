@@ -178,7 +178,7 @@
                                           );
 
                                           // Agrego datos del pagador
-                                          $payment = new MercadoPago\Payer();
+                                          $payment = new MercadoPago\Payment();
                                           $payment->name = "Lalo";
                                           $payment->surname = "Landa";
                                           $payment->email = "test_user_63274575@testuser.com";
@@ -193,6 +193,7 @@
                                             "street_number" => "123",
                                             "zip_code" => "1111"
                                           );
+                                          
                                           $preference->payment = array($payment);
 
                                           $preference->external_reference = "joaquindaneri@gmail.com";

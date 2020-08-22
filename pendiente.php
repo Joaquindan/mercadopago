@@ -11,6 +11,8 @@ if($_GET)
 echo "El pago se encuentra pendiente";
 echo "<br>";
 echo "<br>";
+echo "collection_id = " . $_GET['collection_id'];
+echo "<br>";
 echo "collection_status = " . $_GET['collection_status'];
 echo "<br>";
 echo "external_reference = " . $_GET['external_reference'];
