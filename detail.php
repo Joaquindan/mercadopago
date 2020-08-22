@@ -178,23 +178,26 @@
                                           );
 
                                           // Agrego datos del pagador
-                                          $payment = new MercadoPago\Payment();
-                                          $payment->name = "Lalo";
-                                          $payment->surname = "Landa";
-                                          $payment->email = "test_user_63274575@testuser.com";
+                                          $payer = new MercadoPago\Payer();
+                                          
+                                          $payer->id = 471923173;
+                                          $payer->name = "Lalo";
+                                          $payer->surname = "Landa";
+                                          $payer->email = "test_user_63274575@testuser.com";
 
-                                          $payment->phone = array (
+                                          $payer->phone = array (
                                             "area_code" => "11",
                                             "number" => "22223333"
                                           );
 
-                                          $payment->address = array (
-                                            "street_name" => "False",
-                                            "street_number" => "123",
+                                          $payer->address = array (
+                                            "street_name" => false,
+                                            "street_number" => 123,
                                             "zip_code" => "1111"
                                           );
                                           
-                                          $preference->payment = array($payment);
+                                          //print_r ($payer);
+                                          $preference->payer = $payer;
 
                                           $preference->external_reference = "joaquindaneri@gmail.com";
 
@@ -205,6 +208,7 @@
                                           );
                                           $preference->auto_return = "approved";
 
+                                          //print_r ($preference);
                                           $preference->save();
 
                                         ?>
