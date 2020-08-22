@@ -134,7 +134,7 @@
                                     <input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
                                     <input type="hidden" name="price" value="<?php echo $_POST['price']; ?>">
                                     <input type="hidden" name="unit" value="<?php echo $_POST['unit']; ?>">
-                                    <input type="hidden" name="img" value="<?php echo $_POST['img']; ?>">
+                                    <input type="hidden" name="img" value="<?php echo "https://certificado-mercadopago.herokuapp.com" . substr($_POST['img'], 1);?>">
                                     <div>
                                         <?php
                                         $nombre =  $cantidad = $precio = $img = NULL;
@@ -142,7 +142,8 @@
                                           $nombre = $_POST['title'];
                                           $cantidad = $_POST['unit'];
                                           $precio = $_POST['price'];
-                                          $img = $_POST['img'];
+                                          $img = "https://certificado-mercadopago.herokuapp.com" . substr($_POST['img'], 1);
+
 
                                           // SDK de Mercado Pago
                                           require __DIR__ .  '/vendor/autoload.php';
@@ -180,7 +181,7 @@
                                           $payment = new MercadoPago\Payer();
                                           $payment->name = "Lalo";
                                           $payment->surname = "Landa";
-                                          $payment->email = "joaquindaneri@gmail.com";
+                                          $payment->email = "test_user_63274575@testuser.com";
 
                                           $payment->phone = array (
                                             "area_code" => "11",
