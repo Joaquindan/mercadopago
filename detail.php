@@ -154,14 +154,15 @@
 
                                           // Crea un objeto de preferencia
                                           $preference = new MercadoPago\Preference();
+                                          print_r ($preference);
 
                                           // Crea un ítem en la preferencia
                                           $item = new MercadoPago\Item();
                                           $item->id = 1234;
                                           $item->title = $nombre;
                                           $item->description = "Dispositivo móvil de Tienda e-commerce";
-                                          $item->quantity = $cantidad;
-                                          $item->unit_price = $precio;
+                                          $item->quantity = $precio;
+                                          $item->unit_price = $cantidad;
                                           $item->picture_url = $img;
 
                                           $preference->items = array($item);
@@ -196,7 +197,6 @@
                                             "zip_code" => "1111"
                                           );
                                           
-                                          //print_r ($payer);
                                           $preference->payer = $payer;
 
                                           $preference->external_reference = "joaquindaneri@gmail.com";
