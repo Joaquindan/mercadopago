@@ -161,7 +161,7 @@
                                           $item->id = 1234;
                                           $item->title = $nombre;
                                           $item->description = "Dispositivo móvil de Tienda e-commerce";
-                                          $item->quantity = $precio;
+                                          $item->quantity = 1;
                                           $item->unit_price = $cantidad;
                                           $item->picture_url = $img;
 
@@ -192,7 +192,7 @@
                                           );
 
                                           $payer->address = array (
-                                            "street_name" => false,
+                                            "street_name" => "False",
                                             "street_number" => 123,
                                             "zip_code" => "1111"
                                           );
