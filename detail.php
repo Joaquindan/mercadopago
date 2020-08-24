@@ -161,8 +161,8 @@
                                           $item->id = 1234;
                                           $item->title = $nombre;
                                           $item->description = "Dispositivo móvil de Tienda e-commerce";
-                                          $item->quantity = 1;
-                                          $item->unit_price = $cantidad;
+                                          $item->quantity = $_POST['unit'];
+                                          $item->unit_price = $_POST['price'];
                                           $item->picture_url = $img;
 
                                           $preference->items = array($item);
