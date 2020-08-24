@@ -207,6 +207,8 @@
                                               "pending" => "https://certificado-mercadopago.herokuapp.com/pendiente.php"
                                           );
                                           $preference->auto_return = "approved";
+                                          $preference->notification_url = "http://certificado-mercadopago.herokuapp.com/notifications.php";
+                                        
 
                                           //print_r ($preference);
                                           $preference->save();
