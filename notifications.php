@@ -20,10 +20,7 @@
     }
 
 
-echo $_POST;
+echo array($_POST);
+//echo "<script>window.open($order, '_blank'); window.focus();</script>";
 echo $plan;
 ?>
-<form>
-    <p><?php echo $_POST["body"]; ?></p>
-    <input type="submit" formtarget="_blank"/>
-</form>
