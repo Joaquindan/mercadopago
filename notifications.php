@@ -17,6 +17,15 @@
                 $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
                 break;
         }
+
+    function logfile($str){
+        $file='log.txt';
+        $myfile = fopen(dirname(__FILE__)."/log.txt", "w") or die("Unable to open file!");
+        fwrite($myfile, $str);
+        fclose($myfile);
+    }
+    $notifications=file_get_contents("php://input");
+    logfile($payment);
 //    {
 //       "id": 12345,
 //        "live_mode": true,
