@@ -24,3 +24,4 @@
     $data = json_decode(file_get_contents('php://input'), true);
     print_r($data);
 ?>
+<p><?php 'id' . $_POST['id']; ?></p>
