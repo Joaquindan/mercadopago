@@ -21,7 +21,7 @@
 
 
 //echo "<script>window.open($_POST["id"], '_blank'); window.focus();</script>";
-    $data = json_decode(file_get_contents('php://input'), true);
-    print_r($data);
+    $_POST = json_decode(file_get_contents('php://input'), true);
+    print_r ($_POST);
 ?>
 <p><?php 'id' . $_POST['id']; ?></p>
