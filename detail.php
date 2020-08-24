@@ -154,7 +154,7 @@
 
                                           // Crea un objeto de preferencia
                                           $preference = new MercadoPago\Preference();
-                                          print_r ($preference);
+                                          
 
                                           // Crea un ítem en la preferencia
                                           $item = new MercadoPago\Item();
@@ -207,10 +207,10 @@
                                               "pending" => "https://certificado-mercadopago.herokuapp.com/pendiente.php"
                                           );
                                           $preference->auto_return = "approved";
-                                          $preference->notification_url = "http://certificado-mercadopago.herokuapp.com/notifications.php";
+                                          $preference->notification_url = "https://certificado-mercadopago.herokuapp.com/notifications.php";
                                         
 
-                                          //print_r ($preference);
+                                          print_r ($preference);
                                           $preference->save();
 
                                         ?>
