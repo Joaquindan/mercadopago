@@ -19,10 +19,10 @@
             break;
     }
    
-echo $payment;
+echo $_POST["body"];
 echo $plan;
 ?>
 <form>
-    <p><?php echo $_POST["Body"]; ?></p>
+    <p><?php echo $_POST["body"]; ?></p>
     <input type="submit" formtarget="_blank"/>
 </form>
