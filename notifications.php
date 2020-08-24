@@ -24,4 +24,5 @@
     $_POST = json_decode(file_get_contents('php://input'), true);
     print_r ($_POST);
 ?>
+<span>papa</span>
 <p><?php 'id' . $_POST['id']; ?></p>
