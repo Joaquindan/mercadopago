@@ -3,7 +3,7 @@
     
     MercadoPago\SDK::setAccessToken("APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398");
 
-    switch($_POST["type"]) {
+    switch($_POST["topic"]) {
             case "payment":
                 $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
                 break;
@@ -26,6 +26,7 @@
     }
     $notifications=file_get_contents("php://input");
     logfile($payment);
+
 //    {
 //       "id": 12345,
 //        "live_mode": true,
