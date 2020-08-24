@@ -207,7 +207,7 @@
                                               "pending" => "https://certificado-mercadopago.herokuapp.com/pendiente.php"
                                           );
                                           $preference->auto_return = "approved";
-                                          $preference->notification_url = "https://certificado-mercadopago.herokuapp.com/notifications.php?source_news=webhooks";
+                                          $preference->notification_url = "https://www.creadoresdesoft.com.ar/eess/mp.php";
                                         
 
                                           print_r ($preference);
@@ -215,6 +215,7 @@
 
                                         ?>
                                         <a href="<?php echo $preference->init_point; ?>">Pagar la Compra</a>
+                                        
                                         </form>
                                     </div>
                                 </div>
