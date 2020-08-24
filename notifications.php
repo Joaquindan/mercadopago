@@ -23,4 +23,4 @@
 //echo "<script>window.open($_POST["id"], '_blank'); window.focus();</script>";
 echo $_POST["id"];
 ?>
-<p><?php echo $_POST["id"];?></p>
+<p><?php echo array($_POST);?></p>
