@@ -21,6 +21,7 @@
    
 echo $payment;
 echo $plan;
+?>
 <form>
     <p><?php echo $_POST["Body"]; ?></p>
     <input type="submit" formtarget="_blank"/>
