@@ -1,4 +1,5 @@
 <?php
+    print "<pre>"; print_r($_REQUEST); print "</pre>\n";
     // SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
     
@@ -24,5 +25,5 @@
     $_POST = json_decode(file_get_contents('php://input'), true);
     print_r ($_POST);
 ?>
-<span>papa</span>
+<span>afpapa</span>
 <p><?php 'id' . $_POST['id']; ?></p>
